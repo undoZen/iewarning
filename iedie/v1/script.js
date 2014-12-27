@@ -21,7 +21,7 @@ var css = '.iedie-wrapper div{border:0 none;margin:0;padding:0;}'+
     'a .iedie-browser-desc{text-decoration:none;font-weight:normal;}'+
     'a.iedie-browser .iedie-browser-desc{padding-top:2px;color:#999;}'+
     'a.iedie-close{font-weight:normal;}'+
-    '.iedie-browser-img{width:60px;height:45px;float:left;background-image:url(/iedie/v1/recommended-browsers.png);background-repeat:no-repeat;cursor:pointer;}'+
+    '.iedie-browser-img{width:60px;height:45px;float:left;background-image:url(//wuyongzhiyong.b0.upaiyun.com/iedie/v1/recommended-browsers.png);background-repeat:no-repeat;cursor:pointer;}'+
     '.iedie-browser-liebao .iedie-browser-img{background-position:0 -50px}'+
     '.iedie-browser-sogou .iedie-browser-img{background-position:0 -100px}'+
     '';
