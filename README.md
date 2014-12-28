@@ -22,7 +22,7 @@ iewarning
 // IEDIE_HINT = '<p>自定义的提示语</p>';
 // IEDIE_IE_LINK_IN_XP = true; // 是否在 XP 系统上显示升级 IE 链接，如果网站支持 IE8，可以设为 true
 </script>
-<script src="http://wuyongzhiyong.b0.upaiyun.com/iedie/v1/script.min.js"></script>
+<script src="//wuyongzhiyong.b0.upaiyun.com/iedie/v1/script.min.js"></script>
 <![endif]-->
 ```
 
@@ -36,4 +36,4 @@ iewarning
 ```
 
 ##授权
-MIT
+作者 @undoZen, 無用實驗室 以 MIT 协议开源
