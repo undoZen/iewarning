@@ -18,7 +18,7 @@ iewarning
 
 ##使用方式
 
-只需要以 conditional comments 的方式在 `<body>` 后添加如下代码即可：
+对 IE10 一下，只需要以 conditional comments 的方式在 `<body>` 后添加如下代码即可：
 
 ###v1.1
 ```javascript
@@ -42,7 +42,18 @@ iewarning
 <![endif]-->
 ```
 
-##版本与浏览器选择
+由于 IE 10 不支持条件注释了，如果要对 IE10 也显示，则需要在条件注释后面再添加：
+
+```javascript
+<script>
+if (navigator.userAgent.match(/Trident\/6/)) {
+    // IEDIE_HINT = '<p>自定义的提示语</p>';
+    document.write('<script src="http://wuyongzhiyong.b0.upaiyun.com/iedie/v1.0.1/script.min.js"><'+'/script>');
+}
+</script>
+```
+
+##浏览器选择
 
 ###v1
 在第一个版本中，主推三款符合国情的国产浏览器，首推 360 极速，基本上就是个定制化的 Chrome，是让国内用户用上最新版 Chrome 的最便捷方式；另外猎豹和搜狗两款浏览器，都是正确设置 meta 后会默认以 chrome 内核渲染的。而 360 安全浏览器默认是 IE 内核，需要第二次刷新才回变成 chrome
