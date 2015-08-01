@@ -3,14 +3,14 @@ iewarning
 
 这是由<u>無用實驗室</u>出品的一个在低版本浏览器上以 modal 形式友好提示用户更换浏览器的小脚本，展示效果如下：
 
-###v1
-![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1/screenshot.png)
+###v1.2
+![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1.2/screenshot.png)
 
 ###v1.1
 ![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1.1/screenshot.png)
 
-###v1.2
-![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1.2/screenshot.png)
+###v1
+![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1/screenshot.png)
 
 
 ##优点
