@@ -9,6 +9,9 @@ iewarning
 ###v1.1
 ![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1.1/screenshot.png)
 
+###v1.2
+![screenshot](https://raw.githubusercontent.com/WuYongZhiYong/iewarning/master/iedie/v1.2/screenshot.png)
+
 
 ##优点
 
@@ -19,6 +22,16 @@ iewarning
 ##使用方式
 
 对 IE10 一下，只需要以 conditional comments 的方式在 `<body>` 后添加如下代码即可：
+
+###v1.2
+```javascript
+<!--[if lt IE 10]>
+<script> // 如果推荐语使用默认值，可以删除此 script 标签
+// IEDIE_HINT = '<p>自定义的提示语</p>';
+</script>
+<script src="http://wuyongzhiyong.b0.upaiyun.com/iedie/v1.2/script.min.js"></script>
+<![endif]-->
+```
 
 ###v1.1
 ```javascript
@@ -61,9 +74,11 @@ if (navigator.userAgent.match(/Trident\/6/)) {
 ###v1.1
 接受开发者社区反馈意见，调研后决定推荐 Chrome、IE11 和 Firefox 三款，因为国内网络环境的问题，仍然把 360 极速作为 Chrome 的首要备选推荐。
 
+###v1.2
+QQ 浏览器已默认为 Chromium 43 内核，与 360 极速一起作为 Chromium 的定制版本推荐，Google 浏览器因为国情原因放到最后。
+
 ###不推荐某些热门浏览器的原因
 
-* QQ 浏览器：默认不带 Chrome 内核，需要用户再手动下载，听说会捆绑 QQ 杀毒；
 * 百度浏览器：听说比 360 还流氓，后台静默安装的卫士和杀毒无法卸载。
 
 ##关于触发双核浏览器使用 chrome 内核
