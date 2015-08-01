@@ -28,6 +28,7 @@ var css = '.iedie-wrapper div{border:0 none;margin:0;padding:0;}'+
     '.iedie-browser p {padding:0;margin:0;margin-bottom:10px;}'+
     'a{text-decoration:none;color:#666;font-weight:bold;}'+
     '.iedie-body a:hover{text-decoration:underline;}'+
+    '.iedie-body p{margin: 1em 0;}'+
     '.iedie-browser-desc{text-decoration:none;font-weight:normal;}'+
     '.iedie-browser-desc{padding-top:2px;color:#999;}'+
     'a.iedie-close{font-weight:normal;}'+
