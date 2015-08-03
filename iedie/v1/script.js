@@ -55,28 +55,24 @@ wrapper.insertBefore(styleElem, document.getElementById('iedie-bg'));
 //wrapper.appendChild(styleElem); // 添加为第一个子节点是为了下面能 trigger relayout
 
 (function r(f){/in/.test(document.readyState)?setTimeout(function(){r(f);},9):f()}(function(){
-  // 解决刷新的时候自动恢复位置的问题，在 domready 后 scrollTo 页面顶部
-  // domready 代码来自 http://www.dustindiaz.com/smallest-domready-ever
-  setTimeout(function(){
-    window.scrollTo(0,0);
-  }, 1);
+    // 解决刷新的时候自动恢复位置的问题，在 domready 后 scrollTo 页面顶部
+    // domready 代码来自 http://www.dustindiaz.com/smallest-domready-ever
+    setTimeout(function(){
+        window.scrollTo(0,0);
+    }, 1);
 }));
 
 __iedie_close = function() {
-  setTimeout(function () {
-    __iedie_close = void 0;
-    delete __iedie_close;
-  }, 1);
-  while (wrapper.firstChild) {
-    wrapper.removeChild(wrapper.firstChild);
+    setTimeout(function () {
+        __iedie_close = void 0;
+        delete __iedie_close;
+    }, 1);
+    wrapper.innerHTML = '';
     if (wrapper.parentNode) {
-      var tmp = 0; // trigger relayout，不然 IE7 下滚动条不会恢复
-      tmp = wrapper.parentNode.offsetTop  +  'px';
+        var tmp = 0; // trigger relayout，不然 IE7 下滚动条不会恢复
+        tmp = wrapper.parentNode.offsetTop  +  'px';
+        wrapper.parentNode.removeChild(wrapper);
     }
-  }
-  if (wrapper.parentNode) {
-    wrapper.parentNode.removeChild(wrapper);
-  }
 };
 
 }());
